@@ -1,105 +1,79 @@
-# Anubhav Chauhan — Data & Product Analyst Portfolio
+<div align="center">
 
-A premium, recruiter-focused portfolio built with a Netflix-inspired dark UI — cinematic hero, "Match %" project badges, hover-expand project cards, and a fully interactive project detail modal.
+# 🎬 Anubhav Chauhan — Data & Product Analyst Portfolio
 
-**Live demo:** _add your deployed URL here after deploying_
+### *A Netflix-inspired, recruiter-first portfolio that treats your career like a premium streaming experience.*
+
+![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
+
+</div>
 
 ---
 
-## Tech Stack
+## 🍿 About This Project
 
-- **Framework:** Next.js 15 (App Router) + React 19 + TypeScript
-- **Styling:** Tailwind CSS v4 (CSS-based theme tokens)
-- **Animation:** Framer Motion
-- **Icons:** Lucide React (+ 2 custom inline SVGs for GitHub/LinkedIn, since brand icons were removed from lucide-react)
-- **Fonts:** Self-hosted via `@fontsource` (Bebas Neue, Inter, JetBrains Mono) — no external Google Fonts request at runtime
+This isn't a template. It's a fully custom, from-scratch portfolio designed to make a Data Analyst's work feel as gripping to scroll through as a Netflix homepage — dark, cinematic, red-accented, and built around one idea: **every project should feel like something worth clicking play on.**
 
-## Folder Structure
+It was built end-to-end through a structured design process:
 
-```
-src/
-├── app/
-│   ├── layout.tsx        # Root layout, fonts, full SEO metadata
-│   ├── page.tsx           # Assembles all sections
-│   ├── globals.css        # Design tokens (colors, fonts) as CSS variables
-│   ├── loading.tsx        # Route-level loading skeleton
-│   ├── not-found.tsx      # Custom 404 page
-│   ├── sitemap.ts         # Dynamic sitemap.xml
-│   ├── robots.ts          # Dynamic robots.txt
-│   ├── icon.svg           # Favicon
-│   └── apple-icon.png     # iOS home screen icon
-├── components/            # One component per section/feature
-│   ├── Navbar.tsx
-│   ├── Hero.tsx
-│   ├── About.tsx
-│   ├── Skills.tsx
-│   ├── ProjectsSection.tsx   # Search + filter + featured row
-│   ├── ProjectCard.tsx
-│   ├── ProjectModal.tsx      # Full project detail view
-│   ├── Certifications.tsx
-│   ├── Education.tsx
-│   ├── ResumeSection.tsx
-│   ├── Contact.tsx
-│   ├── Footer.tsx
-│   ├── Toast.tsx             # Copy-email notification system
-│   ├── ScrollProgress.tsx
-│   ├── BackToTop.tsx
-│   ├── CursorGlow.tsx
-│   ├── BrandIcons.tsx        # GitHub/LinkedIn SVGs
-│   ├── JsonLd.tsx            # Structured data for SEO
-│   └── SectionHeading.tsx
-├── data/                   # ALL editable content lives here
-│   ├── profile.ts           # About me, contact, education, certs, achievements
-│   ├── projects.ts          # Every project's full detail
-│   └── skills.ts            # Skill groups + proficiency levels
-├── types/index.ts          # Shared TypeScript interfaces
-└── lib/utils.ts            # Small helpers (cn className merger)
+1. **Discovery interview** — resume, GitHub repos, and personal narrative gathered directly from the candidate, one section at a time, with nothing assumed.
+2. **Content extraction & analysis** — every GitHub repository was fetched and read in full (READMEs, screenshots, commit context) to pull real project data, quantified business impact, and technical depth.
+3. **Design system definition** — a Netflix-inspired dark theme (`#0B0B0B` background, `#E50914` red) paired with a bold Bebas Neue display face and monospace data labels, translated into reusable design tokens.
+4. **Component-by-component build** — Next.js 15 + TypeScript, assembled section by section with Framer Motion choreography, then verified with a clean production build.
 
-public/
-├── resume/Anubhav_Chauhan_Resume.pdf
-├── images/profile/          # Hero backdrop + about photo
-├── images/projects/         # Real screenshots pulled from your GitHub repos
-└── og-image.png             # Social share preview image
-```
+---
 
-## Getting Started Locally
+## 🎞️ What's Inside
 
-```bash
-npm install
-npm run dev
-```
+| Section | What It Does |
+|---|---|
+| 🎬 **Hero** | Cinematic title-card intro with a duotone photo backdrop, ambient particle animation, and a "Match %" badge for recruiters |
+| 👤 **About Me** | Personal narrative + status card, written from a real self-description interview |
+| 📊 **Skills** | Animated proficiency bars grouped by category — Languages, Data Analysis, Tools, Core Skills |
+| 🗂️ **Projects** | A featured horizontal row + a fully searchable, filterable project grid, each opening into a rich detail modal (business problem, dataset, tech stack, key insights, challenges, learnings, screenshots) |
+| 🏆 **Certifications & Achievements** | NPTEL certifications, hackathon finalist placement, and other recognitions |
+| 🎓 **Education & Experience** | Timeline-style academic history alongside research and leadership experience |
+| 📄 **Resume** | One-click PDF download, wired directly into the navbar and a dedicated CTA section |
+| ✉️ **Contact** | Copy-to-clipboard email, LinkedIn, GitHub, and location — with toast confirmation |
+| 🔻 **Footer** | Minimal, on-brand sign-off |
 
-Visit `http://localhost:3000`.
+Plus the small details that make it feel finished: a scroll progress bar, a back-to-top button, a custom 404 page, a branded loading skeleton, and a fully optimized favicon + social share image.
 
-## Customizing Content
+---
 
-**You never need to touch component code to update content.** Everything lives in `src/data/`:
+## 🛠️ Tech Stack
 
-- **Change About Me, contact info, education, certifications:** edit `src/data/profile.ts`
-- **Add/edit/remove a project:** edit `src/data/projects.ts` — each project is one object; set `featured: true` to show it in the hero row
-- **Update skill proficiency:** edit `src/data/skills.ts`
-- **Swap your resume PDF:** replace `public/resume/Anubhav_Chauhan_Resume.pdf` (keep the same filename, or update `resumeUrl` in `profile.ts`)
-- **Swap your photo:** replace files in `public/images/profile/`
-- **Add new project screenshots:** drop images into `public/images/projects/<project-name>/` and reference them in that project's `images` array in `projects.ts`
+**Framework & Language**
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
 
-## Deploying to Vercel
+**Styling & Motion**
+- Tailwind CSS v4 (CSS-variable-based design tokens)
+- Framer Motion (page-load choreography, scroll reveals, hover physics)
 
-1. Push this project to a GitHub repository.
-2. Go to vercel.com/new and import the repo.
-3. Vercel auto-detects Next.js — no config needed. Click **Deploy**.
-4. Once deployed, update the `SITE_URL` constant in `src/app/layout.tsx` and the `base` URL in `src/app/sitemap.ts` / `src/app/robots.ts` to match your real Vercel URL (or custom domain).
-5. Redeploy (Vercel redeploys automatically on every push to `main`).
+**Fonts**
+- Self-hosted via `@fontsource` — Bebas Neue (display), Inter (body), JetBrains Mono (data/labels)
 
-### Custom Domain (optional)
-In your Vercel project settings → Domains → add your domain and follow the DNS instructions shown.
+**Icons**
+- Lucide React, with custom inline SVGs for GitHub/LinkedIn
 
-## Performance & SEO
+**SEO & Metadata**
+- Dynamic `sitemap.xml` and `robots.txt`
+- OpenGraph + Twitter Card metadata
+- JSON-LD structured data (Person schema)
 
-- Fully static site (every route is prerendered) — fast, cheap to host, great Lighthouse scores.
-- Self-hosted fonts (no external font requests).
-- `next/image` automatic optimization (responsive sizes, lazy loading, WebP/AVIF).
-- Metadata, OpenGraph, Twitter Cards, JSON-LD structured data, sitemap.xml and robots.txt all included out of the box.
+**Deployment Target**
+- Vercel (zero-config Next.js hosting)
 
-## Accessibility
+---
 
-- Semantic HTML, visible focus states, `aria-label`s on icon-only buttons, `prefers-reduced-motion` respected throughout.
+<div align="center">
+
+*Built section by section, one honest conversation at a time.*
+
+</div>
