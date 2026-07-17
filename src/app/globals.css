@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  /* Core surfaces */
+  --bg: #0b0b0b;
+  --bg-elevated: #141414;
+  --bg-card: #181818;
+  --bg-card-hover: #1f1f1f;
+
+  /* Brand */
+  --red: #e50914;
+  --red-dark: #b20710;
+  --red-glow: rgba(229, 9, 20, 0.35);
+
+  /* Text */
+  --white: #ffffff;
+  --gray-100: #e5e5e5;
+  --gray-400: #b3b3b3;
+  --gray-600: #737373;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.18);
+
+  /* Fonts (self-hosted via @fontsource) */
+  --font-display: "Bebas Neue";
+  --font-body: "Inter";
+  --font-mono: "JetBrains Mono";
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-red: var(--red);
+  --color-red-dark: var(--red-dark);
+  --color-white: var(--white);
+  --color-gray-100: var(--gray-100);
+  --color-gray-400: var(--gray-400);
+  --color-gray-600: var(--gray-600);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  scrollbar-color: var(--red-dark) var(--bg-elevated);
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Custom scrollbar (webkit) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-elevated);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red-dark);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
+}
+
+/* Horizontal scroll rows (Netflix-style) — hide scrollbar, keep function */
+.row-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.row-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.font-display {
+  font-family: var(--font-display), ui-sans-serif, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

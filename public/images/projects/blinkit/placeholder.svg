@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0b0b0b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e50914"/>
+      <stop offset="100%" stop-color="#b20710"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="400" cy="210" r="70" fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.7"/>
+  <path d="M370 210 l20 20 l40 -45" fill="none" stroke="#e50914" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="28" fill="#e5e5e5" text-anchor="middle" font-weight="700">Trust Score · Price Lock</text>
+  <text x="400" y="365" font-family="Arial, sans-serif" font-size="16" fill="#737373" text-anchor="middle">Interactive prototype — see live demo</text>
+</svg>
