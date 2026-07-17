@@ -61,7 +61,7 @@ export const experience = {
   organization: "Netaji Subhas University of Technology (NSUT), Delhi",
   duration: "June 2025 – Present",
   points: [
-    "Designed a cyber-physical hydroponics monitoring system integrating deep learning with quantum computing (Qiskit) for continuous plant health forecasting.",
+    "Designed with my team ,a cyber-physical hydroponics monitoring system integrating deep learning with quantum computing (Qiskit) for continuous plant health forecasting.",
     "Benchmarked quantum optimization approaches against classical hydroponic models using Python, PyTorch, Qiskit, GRU, VQE, SPSA, and Simulated Annealing.",
   ],
 };
@@ -89,7 +89,7 @@ export const aboutMe = {
   paragraphs: [
     "I'm a third-year B.Tech student at Netaji Subhas University of Technology (NSUT), working at the intersection of data, AI, and business problem-solving. My focus is Product & Data Analytics — using SQL, Python, and BI tools to turn raw, messy data into insights that actually shape product and business decisions.",
     "What draws me to this work is the \u201Cwhy\u201D behind the numbers. It's easy to report a metric; it's harder \u2014 and more valuable \u2014 to explain what's driving it and what to do next. That mindset has taken me from vendor performance analysis (uncovering $4.35M in loss-making sales) to a Tableau BI pipeline processing \u20B9986M+ in revenue, to a product case study on transparent checkout design for a quick-commerce app.",
-    "Beyond core analytics, I've worked on AI and optimization research \u2014 including a hydroponics monitoring system combining deep learning with quantum computing \u2014 and competed as a hackathon finalist building an AI-powered underwater pollution monitoring system. I'm currently looking for a Data Analyst internship where I can work on real business problems, with long-term goals of growing into a Product Analyst or Analytics Engineer role.",
+    "Across my projects, I've worked with data at a scale that mirrors real business stakes \u2014 analyzing 520 brands and uncovering $4.35M in loss-making sales, building a BI pipeline behind \u20B9986M+ in revenue across 14 markets, and running 30+ SQL queries against multi-table procurement datasets. I'm currently looking for a Data Analyst internship where I can bring that same rigor to real business problems, with long-term goals of growing into a Product Analyst or Analytics Engineer role.",
   ],
   targetCompanies: ["Microsoft", "Amazon", "Adobe", "Zomato", "Blinkit", "Flipkart", "Swiggy"],
 };
